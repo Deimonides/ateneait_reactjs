@@ -1,13 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+import ItemListContainer from './container/ItemListContainer';
+import Footer from'./components/Footer.jsx';
 
 function App() {
+
+  const mensajeBienvenida = 'Bienvenidos a AteneaIT'
+
+  const styleLi = {
+    color : 'red'
+  }
+
+  const alertMsg = () => { alert('Hola Mundo!') }
+
+
+
   return (
     <div className="App">
-      
-      <h1>Bienvenidos al eCommerce de AteneaIT</h1>
-      <h2><a>Ir al catálogo</a></h2>
-      <a href="https://github.com/Deimonides/ateneait_reactjs/tree/master">Visite el proyecto en GitHub!</a> 
+      <div>
+        <NavBar />
+        <ItemListContainer greeting="Lista de productos: Microprocesadores" />
+        <ItemListContainer greeting="Lista de productos: PC armadas" />
+        <ItemListContainer greeting="Lista de productos: Placas de video" />
+        <ItemListContainer greeting="Lista de productos: Celulares" />
+        <ItemListContainer greeting="Lista de productos: Accesorios" />
+        <Footer anio='2022'></Footer>
+      </div>
 
     </div>
   );
