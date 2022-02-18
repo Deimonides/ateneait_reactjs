@@ -37,7 +37,9 @@ function NavBar() {
                 </button>
                 
                 {/* Boton MI CARRITO */}
-                <CartWidget />
+                <CartWidget>
+                    <p>Algo...</p>
+                </CartWidget>
        
             </div>
         </header>
