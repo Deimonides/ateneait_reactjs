@@ -1,0 +1,66 @@
+[  
+    {
+        "id": 1,
+        "nombre": "Radeon RX 1",
+        "categoria": "Placa de Video",
+        "precio": 250000,
+        "foto": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Radeon RX 2",
+        "categoria": "Placa de Video",
+        "precio": 190000,
+        "foto": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "nVidia RTX 1",
+        "categoria": "Placa de Video",
+        "precio": 470000,
+        "foto": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "nVidia RTX 2",
+        "categoria": "Placa de Video",
+        "precio": 320000,
+        "foto": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Modulo 16GB DDR4",
+        "categoria": "Memoria RAM",
+        "precio": 12000,
+        "foto": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Modulo 32GB DDR4",
+        "categoria": "Memoria RAM",
+        "precio": 19000,
+        "foto": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Thermaltake 500W",
+        "categoria": "Fuente",
+        "precio": 8000,
+        "foto": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Thermaltake 600W",
+        "categoria": "Fuente",
+        "precio": 9500,
+        "foto": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "cantidad": 1
+    }
+]

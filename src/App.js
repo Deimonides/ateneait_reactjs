@@ -17,11 +17,7 @@ function App() {
     <div className="App">
       <div>
         <NavBar />
-        <ItemListContainer greeting="ItemListContainer: Microprocesadores" imagen={img_micros} categ="Microprocesadores" />
-        <ItemListContainer greeting="ItemListContainer: Notebooks" imagen={img_noteb} categ="Notebooks" />
-        <ItemListContainer greeting="ItemListContainer: Placas de video" imagen={img_pvideo} categ="Placas de Video" />
-        <ItemListContainer greeting="ItemListContainer: Celulares" imagen={img_celus} categ="Celulares" />
-        <ItemListContainer greeting="ItemListContainer: Accesorios" imagen={img_extras} categ="Accesorios" />
+        <ItemListContainer />
         <Footer anio='2022'></Footer>
       </div>
 
