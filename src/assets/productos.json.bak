@@ -4,16 +4,8 @@
         "name": "AMD Ryzen 9 5950x",
         "category": "CPU",
         "price": 90000,
-        "image": "/images/amd9.png",
-        "stock": 1,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "id": "amd7",
-        "name": "AMD Ryzen 7 5800x",
-        "category": "CPU",
-        "price": 60000,
-        "image": "/images/amd7.png",
+        "image-thumb": "assets/image/hero/slider-bg-amd9.jpg",
+        "image": "assets/image/amd9.png",
         "stock": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
@@ -22,17 +14,28 @@
         "name": "Intel i9-10900k",
         "category": "CPU",
         "price": 70000,
-        "image": "/images/intel9.png",
+        "image-thumb": "assets/images/hero/slider-bg-intel9.jpg",
+        "image": "assets/images/hero/intel9.jpg",
         "stock": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
-    
+    {
+        "id": "amd7",
+        "name": "AMD Ryzen 7 5800x",
+        "category": "CPU",
+        "price": 60000,
+        "image-thumb": "assets/images/hero/slider-bg-amd7.jpg",
+        "image": "assets/images/hero/amd7.jpg",
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
     {
         "id": "intel7",
         "name": "Intel i7-10700k",
         "category": "CPU",
         "price": 46000,
-        "image": "/images/intel7.png",
+        "image-thumb": "assets/images/hero/slider-bg-intel7.jpg",
+        "image": "assets/images/hero/intel7.jpg",
         "stock": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
@@ -40,19 +43,19 @@
         "id": "gpu-A1",
         "name": "Radeon RX 1",
         "category": "Placa de Video",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
         "price": 250000,
-        "image": "/images/gpu6800.png",
-        "stock": 1,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
+        "image": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "stock": 1
     },
     {
         "id": "gpu-A2",
         "name": "Radeon RX 2",
         "category": "Placa de Video",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
         "price": 190000,
-        "image": "/images/gpu6800.png",
-        "stock": 1,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
+        "image": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "stock": 1
     },
     {
         "id": "gpu-N1",
@@ -60,7 +63,7 @@
         "category": "Placa de Video",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
         "price": 470000,
-        "image": "/images/RTX3090.png",
+        "image": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
         "stock": 1
     },
     {
@@ -69,16 +72,7 @@
         "category": "Placa de Video",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
         "price": 320000,
-        "image": "/images/RTX3090.png",
-        "stock": 1
-    },
-    {
-        "id": "ram-32",
-        "name": "Modulo 32GB DDR4",
-        "category": "Memoria RAM",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
-        "price": 19000,
-        "image": "/images/ram16gb.png",
+        "image": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
         "stock": 1
     },
     {
@@ -87,7 +81,16 @@
         "category": "Memoria RAM",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
         "price": 12000,
-        "image": "/images/ram16gb.png",
+        "image": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
+        "stock": 1
+    },
+    {
+        "id": "ram-32",
+        "name": "Modulo 32GB DDR4",
+        "category": "Memoria RAM",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
+        "price": 19000,
+        "image": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
         "stock": 1
     },
     {
@@ -96,7 +99,7 @@
         "category": "Fuente",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
         "price": 8000,
-        "image": "/images/powtt500.png",
+        "image": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
         "stock": 1
     },
     {
@@ -105,7 +108,7 @@
         "category": "Fuente",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
         "price": 9500,
-        "image": "/images/powtt500.png",
+        "image": "https://dummyimage.com/300x200/4800ff/ffffff.png&text=AteneaIT",
         "stock": 1
     }
 ]

@@ -25,7 +25,7 @@ function NavBar() {
 
                 <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                 <a href="#" className="mr-5 hover:text-blue-500 hover:font-bold">Productos</a>
-                <a href="#" className="mr-5 hover:text-blue-500 hover:font-bold">Promociones</a>
+                {/* <a href="#" className="mr-5 hover:text-blue-500 hover:font-bold">Promociones</a> */}
                 <a href="#" className="mr-5 hover:text-blue-500 hover:font-bold">Servicios</a>
                 <a href="#" className="mr-5 hover:text-blue-500 hover:font-bold" href="mailto:soporte_ateneait@gmail.com?subject=Quiero%20mas%20info!">Contacto</a>
                 </nav>
