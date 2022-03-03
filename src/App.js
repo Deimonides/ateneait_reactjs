@@ -1,6 +1,9 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './container/ItemListContainer';
+import ItemDetailContainer from './container/ItemDetailContainer';
+
 import Footer from'./components/Footer.jsx';
 
 /* import img_micros from './assets/items/amd9.png'
@@ -13,16 +16,29 @@ function App() {
 
   
 
-  return (
-    <div className="App">
-      <div>
-        <NavBar />
-        <ItemListContainer />
-        <Footer anio='2022'></Footer>
-      </div>
-
+    return (
+        <div className="App">
+    <div>
+    <NavBar />
+    <ItemListContainer />
+    <ItemDetailContainer />
+    <Footer anio='2022'></Footer>
     </div>
-  );
+    
+    </div>
+    );
+    {/* <>
+        <BrowserRouter>
+            <NavBar />
+            <Routes>
+                <Route index element={<ItemListContainer />}></Route>
+                <Route path='/servicios' component={Servicios}></Route>
+                <Route path='/contacto' component={Contacto}></Route>
+            </Routes>
+  
+        </BrowserRouter>
+    </> */}
+
 }
 
 export default App;

@@ -13,7 +13,7 @@ const Item = ( {props} ) => {
             <div className="mt-4">
                 <h2 className="text-gray-900 title-font text-lg font-medium text-blue-600">{props.name}</h2>
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1"><span className="underline">Categoría</span>: {props.category}</h3>
-                <h4 className="text-gray-500 text-xs tracking-widest title-font mb-1 h-16">{props.description}</h4>
+                <h4 className="text-gray-500 text-xs tracking-widest title-font mb-1">{props.description}</h4>
                 <p className="mt-1 text-red-400">$ {props.price}</p>
             </div>
         </div>
