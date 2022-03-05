@@ -22,12 +22,12 @@ function ItemListContainer() {
                 } else {
                     console.log('False', categoryID);
                     const arrayCateg = JsonProductos.filter( item => {
-                        return (item.category).toLowerCase() == categoryID
+                        return (item.category).toLowerCase() == categoryID // Filtrar los productos que coincidan con la categoria
                     })
                     resolve(arrayCateg)
                     console.log( '@ItemListContainer@ arrayCateg', arrayCateg );
                 }
-            }, 2000); // Desafío entregable: solicita delay de 2 segundos.
+            }, 2000); // Desafío entregable: solicita delay de 2 segundos, simulando retardo de red.
         })  
 
         getItemsPromise.then(

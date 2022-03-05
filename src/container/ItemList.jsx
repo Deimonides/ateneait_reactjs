@@ -3,16 +3,12 @@ import Item from './Item.jsx'
 
 const ItemList = ({propsILC}) => {
     
-    
-
     return (
         <>
-            {/* <h2>Estamos en: <strong>ItemList</strong></h2> */}
             <CategoryBar />
             <section className="text-gray-600 body-font justify-center text-center ">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap -m-4">
-                        {/* {propsILC.map ( p => <Item key={p.id} propsIL={p} ></Item> )} */}
                         {propsILC.map ( (item) => {
                             return <Item
                                 key={item.id} 

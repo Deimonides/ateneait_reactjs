@@ -16,15 +16,10 @@ function ItemDetailContainer(props) {
     const getItem = () => {
     
         const getItemPromise = new Promise( (resolve , reject) => {
-            /* setTimeout(() => { */
-                const itemSeleccionado = JsonProductos.find( item => {
-                    /* console.log('@ItemDetailContainer@ item.id:',item.id, typeof(item.id)); */
-                    /* console.log('@ItemDetailContainer@ id:', id, typeof(id)); */
-                    /* console.log("@ItemDetailContainer@ Iguales? ", item.id === id); */
-                    return item.id === id
-                })
-                resolve(itemSeleccionado)
-           /*  }, 2000); // Desafío entregable: solicita delay de 2 segundos. */
+            const itemSeleccionado = JsonProductos.find( item => {
+                return item.id === id
+            })
+            resolve(itemSeleccionado)
         })  
         
         getItemPromise.then(
@@ -36,9 +31,7 @@ function ItemDetailContainer(props) {
     }
 
     return (
-        <div>
-            {/* <h2>Estamos en: <strong>ItemDetailContainer</strong></h2> */}
-            
+        <div>            
             <ItemDetail 
                 id={producto.id} 
                 name={producto.name} 
