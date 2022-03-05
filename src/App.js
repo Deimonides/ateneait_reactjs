@@ -1,44 +1,34 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './container/ItemListContainer';
-import ItemDetailContainer from './container/ItemDetailContainer';
 
+import NavBar from './components/NavBar';
 import Footer from'./components/Footer.jsx';
 
-/* import img_micros from './assets/items/amd9.png'
-import img_noteb from './assets/items/notebook.png'
-import img_pvideo from './assets/items/gpu6800.png'
-import img_celus from './assets/items/xrn9pro.png'
-import img_extras from './assets/items/keymou.png' */
+import Home from './container/Home';
+import ItemListContainer from './container/ItemListContainer';
+import ItemDetailContainer from './container/ItemDetailContainer';
+import Servicios from './components/Servicios';
+import Contacto from './components/Contacto';
+
+
 
 function App() {
 
-  
-
     return (
-        <div className="App">
-    <div>
-    <NavBar />
-    <ItemListContainer />
-    <ItemDetailContainer />
-    <Footer anio='2022'></Footer>
-    </div>
-    
-    </div>
-    );
-    {/* <>
-        <BrowserRouter>
-            <NavBar />
-            <Routes>
-                <Route index element={<ItemListContainer />}></Route>
-                <Route path='/servicios' component={Servicios}></Route>
-                <Route path='/contacto' component={Contacto}></Route>
-            </Routes>
-  
-        </BrowserRouter>
-    </> */}
-
+        <>
+            <BrowserRouter>
+                <NavBar />
+                <Routes>
+                    <Route index element={<Home />}></Route>
+                    <Route path='catalogo/:categoryID' element={<ItemListContainer />}></Route>
+                    <Route path='producto/:id' element={<ItemDetailContainer />}></Route>
+                    <Route path='servicios' element={<Servicios />}></Route>
+                    <Route path='contacto' element={<Contacto />}></Route>
+                </Routes>
+                <Footer anio='2022'></Footer>
+            </BrowserRouter>
+        </>
+    )
 }
 
 export default App;

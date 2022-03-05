@@ -3,6 +3,7 @@
         "id": "amd9",
         "name": "AMD Ryzen 9 5950x",
         "category": "CPU",
+        "type": "Microprocesador",
         "price": 90000,
         "image": "/images/amd9.png",
         "stock": 1,
@@ -12,6 +13,7 @@
         "id": "amd7",
         "name": "AMD Ryzen 7 5800x",
         "category": "CPU",
+        "type": "Microprocesador",
         "price": 60000,
         "image": "/images/amd7.png",
         "stock": 1,
@@ -21,6 +23,7 @@
         "id": "intel9",
         "name": "Intel i9-10900k",
         "category": "CPU",
+        "type": "Microprocesador",
         "price": 70000,
         "image": "/images/intel9.png",
         "stock": 1,
@@ -31,6 +34,7 @@
         "id": "intel7",
         "name": "Intel i7-10700k",
         "category": "CPU",
+        "type": "Microprocesador",
         "price": 46000,
         "image": "/images/intel7.png",
         "stock": 1,
@@ -39,7 +43,8 @@
     {
         "id": "gpu-A1",
         "name": "Radeon RX 1",
-        "category": "Placa de Video",
+        "category": "pvideo",
+        "type": "Placa de Video",
         "price": 250000,
         "image": "/images/gpu6800.png",
         "stock": 1,
@@ -48,7 +53,8 @@
     {
         "id": "gpu-A2",
         "name": "Radeon RX 2",
-        "category": "Placa de Video",
+        "category": "pvideo",
+        "type": "Placa de Video",
         "price": 190000,
         "image": "/images/gpu6800.png",
         "stock": 1,
@@ -57,55 +63,61 @@
     {
         "id": "gpu-N1",
         "name": "nVidia RTX 1",
-        "category": "Placa de Video",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
+        "category": "pvideo",
+        "type": "Placa de Video",
         "price": 470000,
         "image": "/images/RTX3090.png",
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
         "id": "gpu-N2",
         "name": "nVidia RTX 2",
-        "category": "Placa de Video",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
+        "category": "pvideo",
+        "type": "Placa de Video",
         "price": 320000,
         "image": "/images/RTX3090.png",
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
         "id": "ram-32",
         "name": "Modulo 32GB DDR4",
-        "category": "Memoria RAM",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
+        "category": "ram",
+        "type": "Memoria RAM",
         "price": 19000,
         "image": "/images/ram16gb.png",
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
         "id": "ram-16",
         "name": "Modulo 16GB DDR4",
-        "category": "Memoria RAM",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
+        "category": "ram",
+        "type": "Memoria RAM",
         "price": 12000,
         "image": "/images/ram16gb.png",
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
         "id": "pow-500",
         "name": "Thermaltake 500W",
-        "category": "Fuente",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
+        "category": "fuentes",
+        "type": "Fuente de alimentación",
         "price": 8000,
         "image": "/images/powtt500.png",
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
         "id": "pow-600",
         "name": "Thermaltake 600W",
-        "category": "Fuente",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!",
+        "category": "fuentes",
+        "type": "Fuente de alimentación",
         "price": 9500,
         "image": "/images/powtt500.png",
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     }
 ]
