@@ -1,4 +1,4 @@
-import icon_carrito from '../assets/icons/shopping-cart.png'
+import icon_carrito from '../../assets/icons/shopping-cart.png'
 
 function CartWidget() {
   return (

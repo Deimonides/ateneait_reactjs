@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import JsonProductos from '../assets/productos.json'
+import JsonProductos from '../../assets/productos.json'
 import ItemDetail from './ItemDetail.jsx';
 
 function ItemDetailContainer(props) {
@@ -24,7 +24,7 @@ function ItemDetailContainer(props) {
         
         getItemPromise.then(
             dato => {
-                console.log(dato)
+               /*  console.log(dato) */
                 setProducto(dato)
             }
         )

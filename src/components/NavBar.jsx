@@ -1,6 +1,6 @@
 import logot_ateneait from '../assets/logo/logotipo-bk.png'
 import icon_cuenta from '../assets/icons/account.png'
-import CartWidget from './CartWidget'
+import CartWidget from './Cart/CartWidget'
 import { Link } from 'react-router-dom'
 
 function NavBar() {

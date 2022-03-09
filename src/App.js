@@ -4,11 +4,11 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Footer from'./components/Footer.jsx';
 
-import Home from './container/Home';
-import ItemListContainer from './container/ItemListContainer';
-import ItemDetailContainer from './container/ItemDetailContainer';
-import Servicios from './components/Servicios';
-import Contacto from './components/Contacto';
+import Home from './components/Pages/Home';
+import ItemListContainer from './components/ItemList/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
+import Servicios from './components/Pages/Servicios';
+import Contacto from './components/Pages/Contacto';
 
 
 

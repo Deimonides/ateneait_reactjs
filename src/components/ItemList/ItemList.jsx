@@ -1,4 +1,4 @@
-import CategoryBar from '../components/CategoryBar.jsx'
+import CategoryBar from './CategoryBar.jsx'
 import Item from './Item.jsx'
 
 const ItemList = ({propsILC}) => {
