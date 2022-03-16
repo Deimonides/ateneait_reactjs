@@ -27,7 +27,7 @@ function ItemListContainer() {
                     resolve(arrayCateg)
                     /* console.log( '@ItemListContainer@ arrayCateg', arrayCateg ); */
                 }
-            }, 2000); // Desafío entregable: solicita delay de 2 segundos, simulando retardo de red.
+            }, 1); // Desafío entregable: solicita delay de 2 segundos, simulando retardo de red.
         })  
 
         getItemsPromise.then(

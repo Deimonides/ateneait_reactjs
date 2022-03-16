@@ -31,7 +31,7 @@ const Home = () => {
                   Dell Alienware x5000
                 </h1>
                 <p className="leading-relaxed">
-                  El COLOSO de las noebooks gamer! Lorem ipsum dolor sit amet
+                  El COLOSO de las notebooks gamer! Lorem ipsum dolor sit amet
                   consectetur adipisicing elit. Quas, a!
                 </p>
               </div>
@@ -50,11 +50,11 @@ const Home = () => {
                   THE SUBTITLE
                 </h2>
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                  The Catalyzer
+                  MacBook Pro 16" M1 Pro 1 TB - Silver
                 </h1>
                 <p className="leading-relaxed">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                  La potencia del ultrarrápido chip M1 Pro te permite disfrutar un rendimiento revolucionario.
+                  
                 </p>
               </div>
             </div>

@@ -5,8 +5,8 @@
         "category": "CPU",
         "type": "Microprocesador",
         "price": 90000,
-        "image": "/images/amd9.png",
-        "stock": 7,
+        "image": "https://i.postimg.cc/HjGJtYHB/amd9.png",
+        "stock": 17,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
@@ -15,8 +15,8 @@
         "category": "CPU",
         "type": "Microprocesador",
         "price": 60000,
-        "image": "/images/amd7.png",
-        "stock": 2,
+        "image": "https://i.postimg.cc/90wRTR3D/amd7.png",
+        "stock": 12,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
@@ -25,8 +25,8 @@
         "category": "CPU",
         "type": "Microprocesador",
         "price": 70000,
-        "image": "/images/intel9.png",
-        "stock": 4,
+        "image": "https://i.postimg.cc/BZjMNm4K/intel9.png",
+        "stock": 14,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     
@@ -36,8 +36,8 @@
         "category": "CPU",
         "type": "Microprocesador",
         "price": 46000,
-        "image": "/images/intel7.png",
-        "stock": 8,
+        "image": "https://i.postimg.cc/m2MVWhcZ/intel7.png",
+        "stock": 18,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
@@ -46,8 +46,8 @@
         "category": "pvideo",
         "type": "Placa de Video",
         "price": 250000,
-        "image": "/images/gpu6800.png",
-        "stock": 4,
+        "image": "https://i.postimg.cc/zG8wm7Zp/gpu6800.png",
+        "stock": 14,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
@@ -56,8 +56,8 @@
         "category": "pvideo",
         "type": "Placa de Video",
         "price": 190000,
-        "image": "/images/gpu6800.png",
-        "stock": 5,
+        "image": "https://i.postimg.cc/zG8wm7Zp/gpu6800.png",
+        "stock": 15,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
@@ -66,8 +66,8 @@
         "category": "pvideo",
         "type": "Placa de Video",
         "price": 470000,
-        "image": "/images/RTX3090.png",
-        "stock": 4,
+        "image": "https://i.postimg.cc/pT4QgtRn/RTX3090.png",
+        "stock": 14,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
@@ -76,8 +76,8 @@
         "category": "pvideo",
         "type": "Placa de Video",
         "price": 320000,
-        "image": "/images/RTX3090.png",
-        "stock": 7,
+        "image": "https://i.postimg.cc/pT4QgtRn/RTX3090.png",
+        "stock": 17,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
@@ -86,8 +86,8 @@
         "category": "ram",
         "type": "Memoria RAM",
         "price": 19000,
-        "image": "/images/ram16gb.png",
-        "stock": 5,
+        "image": "https://i.postimg.cc/GpNspJNW/ram16gb.png",
+        "stock": 15,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
@@ -96,8 +96,8 @@
         "category": "ram",
         "type": "Memoria RAM",
         "price": 12000,
-        "image": "/images/ram16gb.png",
-        "stock": 6,
+        "image": "https://i.postimg.cc/GpNspJNW/ram16gb.png",
+        "stock": 16,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
@@ -106,8 +106,8 @@
         "category": "fuentes",
         "type": "Fuente de alimentación",
         "price": 8000,
-        "image": "/images/powtt500.png",
-        "stock": 9,
+        "image": "https://i.postimg.cc/26sv0F7Q/powtt500.png",
+        "stock": 19,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     },
     {
@@ -116,8 +116,8 @@
         "category": "fuentes",
         "type": "Fuente de alimentación",
         "price": 9500,
-        "image": "/images/powtt500.png",
-        "stock": 3,
+        "image": "https://i.postimg.cc/26sv0F7Q/powtt500.png",
+        "stock": 13,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet hic veritatis possimus reprehenderit! Molestiae quidem tempore vero aliquid neque!"
     }
 ]

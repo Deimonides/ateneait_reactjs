@@ -10,15 +10,15 @@ const ItemList = ({propsILC}) => {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap -m-4">
                         {propsILC.map ( (item) => {
-                            return <Item
+                            return <Item item={item}
                                 key={item.id} 
-                                id={item.id} 
+                                /* id={item.id} 
                                 name={item.name} 
                                 type={item.type} 
                                 image={item.image} 
                                 description={item.description} 
                                 price={item.price} 
-                                stock={item.stock} 
+                                stock={item.stock} */ 
                             /> 
                         })}
                     </div>
