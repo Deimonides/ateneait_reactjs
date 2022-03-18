@@ -7,14 +7,16 @@ import ItemCount from "./ItemCount";
 const ItemDetail = ({ item }) => {
     /* console.log(item.id); */
     const { addItem } = useContext(CartContext);
+    const { contarItems } = useContext(CartContext);
 
     const [isInCart, setIsInCart] = useState(false);
 
     function addToCart(itemCant) {
         addItem(item, itemCant);
         setIsInCart(true)
+        contarItems()
     }
-
+ 
     /* console.log(isInCart); */
 
     return (
@@ -50,14 +52,14 @@ const ItemDetail = ({ item }) => {
                             
                             {isInCart 
                             ?   <Link to='../carrito'>
-                                <button type="button" className="py-2 px-4 ml-4 mt-4 ml-60 w-40 text-sm font-medium text-gray-900 bg-green-300 rounded-full hover:bg-green-600 hover:text-white">
-                                Ir al carrito
-                                </button>     
-                            </Link>
-                            :   <ItemCount
+                                    <button type="button" className="py-2 px-4 ml-4 mt-4 ml-60 w-40 text-sm font-medium text-gray-900 bg-green-300 rounded-full hover:bg-green-600 hover:text-white">
+                                    Ir al carrito
+                                    </button>     
+                                </Link>
+                            :   <ItemCount>
                                     addToCart={addToCart}
                                     stock={item.stock}
-                                />
+                                </ItemCount>
                             }
                         </div>
                     </div>

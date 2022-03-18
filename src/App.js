@@ -6,11 +6,11 @@ import Footer from'./components/Footer.jsx';
 
 import Home from './components/Pages/Home';
 import ItemListContainer from './components/ItemList/ItemListContainer';
+import { CartContextProvider } from './components/Context/CartContext';
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import Servicios from './components/Pages/Servicios';
 import Contacto from './components/Pages/Contacto';
 import CartContainer from './components/Cart/CartContainer';
-import { CartContextProvider } from './components/Context/CartContext';
 import PagoContainer from './components/Pago/PagoContainer';
 
 
@@ -30,7 +30,6 @@ function App() {
                         <Route path='contacto' element={<Contacto />}></Route>
                         <Route path='carrito' element={<CartContainer />}></Route>
                         <Route path='pago' element={<PagoContainer />}></Route>
-
                     </Routes>
                     <Footer anio='2022'></Footer>
                 </BrowserRouter>

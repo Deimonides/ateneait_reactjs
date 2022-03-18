@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 /* const Item = ( { id, name, type, image, description, price, stock } ) => { */
 const Item = ( { item } ) => {
     
-    return (
+    return ( 
         <>
         {/* <Link to={`/producto/${item.id}`} className="lg:w-1/4 md:w-1/2 p-4 mx-auto w-full grayscale hover:grayscale-0 hover:bg-sky-100"> */}
         <Link to={`/producto/${item.id}`} className="lg:w-1/4 md:w-1/2 p-4 mx-auto w-full hover:scale-125">

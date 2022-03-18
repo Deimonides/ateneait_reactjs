@@ -15,7 +15,7 @@ export default function ItemCount({ stock, addToCart }) {
         }
     }
 
-    return (
+    return ( 
         <>
             <div className="justify-items-end">
                 <h4 className="inline-flex mt-5 mr-2">Cantidad:</h4>
@@ -43,6 +43,7 @@ export default function ItemCount({ stock, addToCart }) {
                         type="button"
                         className="py-2 px-4 ml-4 text-sm font-medium text-gray-900 bg-blue-300 rounded-full 
                         hover:bg-blue-600 hover:text-white"
+                        /* onClick={ () => addToCart(count) } > */
                         onClick={ () => addToCart(count) } >
                         Agregar al carrito
                     </button>
