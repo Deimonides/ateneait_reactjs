@@ -1,4 +1,6 @@
 import React from 'react'
+import { useEffect } from 'react/cjs/react.development';
+import { getCategorias } from "../firebase/firebaseClient";
 /* import { Link } from 'react-router-dom' */
 import CategoryBarButton from './CategoryBarButton'
 
@@ -12,6 +14,10 @@ const CategoryBar = () => {
         {
             'id': "cpu",
             'name': "Microprocesadores"
+        },
+        {
+            'id': "mother",
+            'name': "Placas Madre"
         },
         {
             'id': "pvideo",
@@ -35,6 +41,14 @@ const CategoryBar = () => {
         }
     ]
 
+    useEffect( () => {
+        
+        getCategorias().then( categorias => {
+            console.log("getCategorias en CatBar: ", categorias);
+        })
+        
+    }, [])
+    
     return (
         <div>
             <header className="text-gray-600 body-font">
@@ -43,7 +57,8 @@ const CategoryBar = () => {
                         <span className="mr-10">Filtrar por categoría:</span>
                         {categorias.map( (categ)  => {
                             return (
-                            <CategoryBarButton 
+                            <CategoryBarButton
+                            key={categ.id}
                             categId={categ.id} 
                             categNombre={categ.name}>
                             </CategoryBarButton>)

@@ -11,7 +11,7 @@ const ItemList = ({propsILC}) => {
                     <div className="flex flex-wrap -m-4">
                         {propsILC.map ( (item) => {
                             return <Item item={item}
-                                key={item.id} 
+                                key={item.name} 
                                 /* id={item.id} 
                                 name={item.name} 
                                 type={item.type} 
