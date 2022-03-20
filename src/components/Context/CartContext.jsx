@@ -69,7 +69,7 @@ export function CartContextProvider({ children }) {
     }
     
     function clearCart() {
-        setitemsInCart([]);
+        setItemsInCart([]);
         console.log("Se vació el carrito de compras.");
         alert("Se vació el carrito de compras.")
     }
