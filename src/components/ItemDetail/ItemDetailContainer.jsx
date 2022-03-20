@@ -9,7 +9,7 @@ function ItemDetailContainer(  ) {
 
     useEffect(() => {
         getItem()
-    }, [])
+    }, [id])
     
     const getItem = () => {
         const getItemPromise = new Promise( (resolve , reject) => {

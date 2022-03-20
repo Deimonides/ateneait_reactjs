@@ -20,7 +20,7 @@ function ItemListContainer() {
             } else {
                 /* console.log('categoryID False', categoryID); */
                 const arrayCateg = prods.filter( item => {
-                    return (item.category).toLowerCase() == categoryID // Filtrar los productos que coincidan con la categoria
+                    return (item.category).toLowerCase() === categoryID // Filtrar los productos que coincidan con la categoria
                 })
                 /* console.log( '@ItemListContainer@ arrayCateg', arrayCateg ); */
                 setProductos(arrayCateg)

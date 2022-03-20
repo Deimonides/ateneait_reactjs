@@ -7,17 +7,17 @@ export function CartContextProvider({ children }) {
     let [totales, setTotales] = useState(0);   
 
     function addItem(item, itemCant) {
-        let buscarItem = itemsInCart.find(elemento => (elemento.id == item.id) ) // buscar el item si está en el carrito
+        let buscarItem = itemsInCart.find(elemento => (elemento.id === item.id) ) // buscar el item si está en el carrito
         /* let buscarItem = itemsInCart.some( elemento => elemento.id === item.id ) */ // Otra forma: devuelve True o False si encuentra el item
         /* console.log( {buscarItem} ); */
-        if (buscarItem == undefined) { // el producto NO existe en el carrito
+        if (buscarItem === undefined) { // el producto NO existe en el carrito
            /*  console.log('Es indefinido --> Item nuevo en carrito'); */
             const itemNuevo = { ...item, itemCant }; // generar el objeto del item incluyéndole la cantidad
             setItemsInCart([...itemsInCart, itemNuevo]); // Se agrega item nuevo
             console.log('array: ' , [...itemsInCart]);
         } else {
             /* console.log('No es indefinido --> Item existe en carrito'); */ // el producto SI existe en el carrito
-            let itemRepetidoIndex = itemsInCart.findIndex( elemento => elemento.id == item.id )
+            let itemRepetidoIndex = itemsInCart.findIndex( elemento => elemento.id === item.id )
             /* console.log('Item Repetido index: ', itemRepetidoIndex); */
             /* console.log('Item Repetido cant: ', itemsInCart[itemRepetidoIndex].itemCant); */
             

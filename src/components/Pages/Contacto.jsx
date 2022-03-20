@@ -31,6 +31,7 @@ function Contacto() {
               <a
                 href="mailto:gsolotun@gmail.com"
                 target="_blank"
+                rel="noreferrer"
                 className="text-indigo-500 leading-relaxed"
               >
                 info@ateneait.com
@@ -41,6 +42,7 @@ function Contacto() {
               <a
                 href="https://api.whatsapp.com/send/?phone=5491126138166"
                 target="_blank"
+                rel="noreferrer"
                 className="text-green-500 leading-relaxed"
               >
                 +54 9 11 2613 8166
