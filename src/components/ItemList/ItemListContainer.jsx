@@ -20,10 +20,10 @@ function ItemListContainer() {
         const getItemsPromise = new Promise( (resolve , reject) => {
             setTimeout(() => {
                 if ( categoryID === "todo" ) {
-                    console.log('True', categoryID);
+                    /* console.log('True', categoryID); */
                     resolve(JsonProductos) // Mapear todo =>Mostrar todos los productos  
                 } else {
-                    console.log('False', categoryID);
+                    /* console.log('False', categoryID); */
                     const arrayCateg = JsonProductos.filter( item => {
                         return (item.category).toLowerCase() == categoryID // Filtrar los productos que coincidan con la categoria
                     })
@@ -36,7 +36,7 @@ function ItemListContainer() {
         getItemsPromise.then(
             datos => {
                 setProductos(datos)
-                console.log('@ItemListContainer@: datos =', datos)
+                /* console.log('@ItemListContainer@: datos =', datos) */
             }
         )
     }

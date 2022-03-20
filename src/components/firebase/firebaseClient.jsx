@@ -7,12 +7,12 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDSGUwVz2-N-W65Ni9R7qY8KGl_lXr1HHM",
-    authDomain: "ateneait-solotun.firebaseapp.com",
-    projectId: "ateneait-solotun",
-    storageBucket: "ateneait-solotun.appspot.com",
-    messagingSenderId: "597413156042",
-    appId: "1:597413156042:web:320e0db456a13ca3371033"
+    apiKey: process.env.REACT_APP_FIREBASE_apiKey,
+    authDomain: process.env.REACT_APP_FIREBASE_authDomain,
+    projectId: process.env.REACT_APP_FIREBASE_projectId,
+    storageBucket: process.env.REACT_APP_FIREBASE_storageBucket,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_messagingSenderId,
+    appId: process.env.REACT_APP_FIREBASE_appId
 };
 
 // Initialize Firebase
@@ -34,8 +34,8 @@ export const getCategorias = async () => {
     const querySnapshot = await getDocs(collection(db, "category"))
     let dbCategorias = []
     querySnapshot.forEach(element => {
-        /* console.log("getCategorias en fbC: ", element.data()); */
-        dbCategorias.push(element.data())
+        /* console.log("getCategorias en fbC: ", element.id, element.data()); */
+        dbCategorias.push({id: element.id, ...element.data()})
     });
     return dbCategorias;
 }

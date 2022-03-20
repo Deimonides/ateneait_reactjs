@@ -14,7 +14,7 @@ export default function ItemCount({ stock, addToCart }) {
             setCount(count - 1);
         }
     }
-
+ 
     return ( 
         <>
             <div className="justify-items-end">

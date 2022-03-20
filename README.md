@@ -16,3 +16,8 @@ Tutor en la comisión.
 El proyecto tiene como meta demostrar los conociemientos obtenidos en clase,
 implementando las herramientas del framework React JS, en una web tipo eCommerce,
 a medida se van desarrollando en el curso semana a semana.
+
+**Negrita**
+_Cursiva_
+Texto ~Subindice~
+Texto 

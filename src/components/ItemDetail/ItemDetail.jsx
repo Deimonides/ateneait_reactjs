@@ -5,7 +5,7 @@ import ItemCount from "./ItemCount";
 
 /* const ItemDetail = ({ id, name, type, image, description, price, stock }) => { */
 const ItemDetail = ({ item }) => {
-    /* console.log(item.id); */
+    /* console.log(item); */
     const { addItem } = useContext(CartContext);
     const { contarItems } = useContext(CartContext);
 
@@ -56,10 +56,10 @@ const ItemDetail = ({ item }) => {
                                     Ir al carrito
                                     </button>     
                                 </Link>
-                            :   <ItemCount>
+                            :   <ItemCount
                                     addToCart={addToCart}
                                     stock={item.stock}
-                                </ItemCount>
+                                />
                             }
                         </div>
                     </div>
