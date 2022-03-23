@@ -4,7 +4,7 @@ const CartContext = createContext();
 
 export function CartContextProvider({ children }) {
     const [itemsInCart, setItemsInCart] = useState([]);
-    let [totales, setTotales] = useState(0);   
+    const [totales, setTotales] = useState(0);   
 
     function addItem(item, itemCant) {
         let buscarItem = itemsInCart.find(elemento => (elemento.id === item.id) ) // buscar el item si está en el carrito
@@ -15,6 +15,7 @@ export function CartContextProvider({ children }) {
             const itemNuevo = { ...item, itemCant }; // generar el objeto del item incluyéndole la cantidad
             setItemsInCart([...itemsInCart, itemNuevo]); // Se agrega item nuevo
             /* console.log('array: ' , [...itemsInCart]); */
+            /* setTotales(() => {contarItems()}) */
         } else {
             /* console.log('No es indefinido --> Item existe en carrito'); */ // el producto SI existe en el carrito
             let itemRepetidoIndex = itemsInCart.findIndex( elemento => elemento.id === item.id )
@@ -26,43 +27,32 @@ export function CartContextProvider({ children }) {
             let itemsInCartCopia = [...itemsInCart]
             itemsInCartCopia[itemRepetidoIndex].itemCant += itemCant
             setItemsInCart(itemsInCartCopia)
+            /* setTotales(() => {contarItems()}) */
         }
         
         console.log('Item agregado al carrito.');
+        /* const iTotales = contarItems(); */
+        /* setTotales(() => {contarItems}) */
+        /* setTotales(iTotales) */
+       /*  console.log('iTotales: ' , iTotales) */
+        /* console.log('totales: ' , totales) */
         
         /* alert("Item agregado al carrito.") */
         /* () => {contarItems()} */
     
     }
     
-    function contarItems () { 
-        let array =  [...itemsInCart]
-        let itemsTotales = 0;
-        /* let precioTotal = 0; */ 
-        
-        /* let total = itemsInCart.map ( element => { element.itemCant += total }  ) */
-        /* itemsInCart.forEach ( function (element)  {total += element.itemCant} ) */
-        /* itemsInCart.map(el => el.itemCant += total ).reduce((total, val) => total + val.itemCant, 0) */
-        
-        /* console.log('array: ' , itemsInCart) */
-        /* itemsTotales = array.reduce((acc, el) => acc + el.itemCant, 0) */
-        setTotales(array.reduce((acc, el) => acc + el.itemCant, 0))
-        /* console.log('itemsTotales: ' , itemsTotales) */
-        /* precioTotal = array.reduce((acc, el) => acc + (el.precio * el.itemCant) , 0)
-        console.log('precioTotal: ' , precioTotal) */
-        /* setTotales(itemsTotales) */
-        /* console.log("totales: " , totales); */
-        /* total = acc */
-        /* cantidadItems = itemsInCart.reduce( (acc, el) => acc + el.itemCant, 0) */
-        /* cantidadItems = itemsInCart.map () */
-        /* setCantidadItems = total;
-        console.log('cantidadItems: ' , cantidadItems); */
+    function contarItems() { 
+        let iTotales = 0;
+        itemsInCart.forEach ( element => iTotales += element.itemCant );
+        return iTotales;
     }
-            
-    /* function addAndCount() {
-        addItem ()
-        contarItems ()
-    } */
+                
+    function precioTotal() {            
+        let pTotal = 0;
+        itemsInCart.forEach ( element => pTotal += ( element.price * element.itemCant ) );
+        return pTotal;           
+    }                        
             
     function eliminarItem(itemId) {
         console.log("Eliminar el item: ", itemId);
@@ -71,11 +61,10 @@ export function CartContextProvider({ children }) {
     function clearCart() {
         setItemsInCart([]);
         console.log("Se vació el carrito de compras.");
-        alert("Se vació el carrito de compras.")
     }
 
     return (
-        <CartContext.Provider value={{ addItem, contarItems, itemsInCart, eliminarItem, clearCart }}>
+        <CartContext.Provider value={{ addItem, contarItems, precioTotal, itemsInCart, eliminarItem, clearCart }}>
             {children}
         </CartContext.Provider>
     );

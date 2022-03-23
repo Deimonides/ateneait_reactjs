@@ -10,7 +10,7 @@ import { CartContextProvider } from './components/Context/CartContext';
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import Servicios from './components/Pages/Servicios';
 import Contacto from './components/Pages/Contacto';
-import CartContainer from './components/Cart/CartContainer';
+import Cart from './components/Cart/Cart';
 import PagoContainer from './components/Pago/PagoContainer';
 
 
@@ -28,7 +28,7 @@ function App() {
                         <Route path='producto/:id' element={<ItemDetailContainer />}></Route>
                         <Route path='servicios' element={<Servicios />}></Route>
                         <Route path='contacto' element={<Contacto />}></Route>
-                        <Route path='carrito' element={<CartContainer />}></Route>
+                        <Route path='carrito' element={<Cart />}></Route>
                         <Route path='pago' element={<PagoContainer />}></Route>
                     </Routes>
                     <Footer anio='2022'></Footer>

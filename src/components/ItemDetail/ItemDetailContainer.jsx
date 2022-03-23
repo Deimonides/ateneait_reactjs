@@ -8,9 +8,6 @@ function ItemDetailContainer(  ) {
     const [producto, setProducto] = useState([])
 
     useEffect(() => {
-        
-    
-    
         function getItem() {
             const getItemPromise = new Promise( (resolve) => {
                 const itemSeleccionado = JsonProductos.find( item => {
@@ -26,7 +23,7 @@ function ItemDetailContainer(  ) {
             )
         }
         getItem()
-    }, [])
+    }, [id])
     
     return (
         <div>            

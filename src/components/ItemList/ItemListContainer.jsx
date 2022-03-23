@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import JsonProductos from '../../assets/productos.json'
 import ItemList from './ItemList.jsx';
 import NoItems from './NoItems';
-import { getFireStore } from "../firebase/firebaseClient";
 
 function ItemListContainer() {
     
@@ -14,7 +13,7 @@ function ItemListContainer() {
     useEffect(() => {
         getItems(categoryID)
     }, [categoryID])
-    
+     
     
     const getItems = ( categoryID ) => {
         const getItemsPromise = new Promise( (resolve , reject) => {
