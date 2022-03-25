@@ -16,13 +16,13 @@ function NavBar() {
              
                 {/* /// Accesos \\\ */}
                 <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-lg font-bold justify-center">
-                    <Link to='/' className="mr-5 hover:text-blue-500">Inicio</Link>
-                    <Link to='catalogo/todo' className="mr-5 hover:text-blue-500">Catalogo</Link>
-                    <Link to='contacto' className="mr-5 hover:text-blue-500">Contacto</Link>
+                    <Link to='/'             className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gradient-to-r from-blue-300 to-blue-400 rounded-full text-base mt-4 md:mt-0">Inicio</Link>
+                    <Link to='catalogo/todo' className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gradient-to-r from-blue-300 to-blue-400 rounded-full text-base mt-4 md:mt-0">Catalogo</Link>
+                    <Link to='contacto'      className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gradient-to-r from-blue-300 to-blue-400 rounded-full text-base mt-4 md:mt-0">Contacto</Link>
                 </div>
 
                 {/* /// Boton MI CUENTA \\\ */}
-                <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gradient-to-r from-blue-300 to-blue-400 rounded-full text-base mt-4 md:mt-0">
+                <button                      className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gradient-to-r from-blue-300 to-blue-400 rounded-full text-base mt-4 md:mt-0">
                     <img src={icon_cuenta} alt="Cuenta" className="w-5 h-5 p-0.5" />
                     Mi Cuenta
                 </button>
