@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CategoryBar from "./CategoryBar";
 
-const NoItems = () => {
+const Finalizado = () => {
     return (
         <>
-            <CategoryBar />
             <section className="flex text-gray-600 body-font justify-center">
                 <div className="px-auto py-24 mx-auto">
                     <div className="flex   -mb-10 text-center">
@@ -14,18 +12,18 @@ const NoItems = () => {
                                 <img
                                     alt="content"
                                     className="object-cover object-center object-scale-down h-full w-full"
-                                    src="https://i.postimg.cc/N05ypNGx/empty-boxes-1.png"
+                                    src="https://i.postimg.cc/W4mM9tRH/cyberscooty-cartoon-truck.png"
                                 />
                             </div>
                             <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
-                                No hay productos :(
+                                Gracias por tu compra!!
                             </h2>
                             <p className="leading-relaxed text-base mb-10">
-                                Disculpas! No disponemos de stock en este                                momento.
+                                Tu envío será enviado al domicilio que indicaste dentro de las próxmas 4 horas.
                             </p>
-                            <Link to="/catalogo/todo">
+                            <Link to="/">
                                 <button className="inline-flex items-center border-0 py-1 px-3 mx-1 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold ">
-                                    Volver al catálogo
+                                    Volver al inicio
                                 </button>
                             </Link>
                         </div>
@@ -36,4 +34,4 @@ const NoItems = () => {
     );
 };
 
-export default NoItems;
+export default Finalizado;

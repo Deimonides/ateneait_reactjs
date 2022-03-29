@@ -13,21 +13,21 @@ const Home = () => {
                         pocas semanas.
                     </p>
                 </div>
-                {/* nuevo 1 */}
                 <div className="flex flex-wrap -m-4">
+                    {/* nuevo 1 */}
                     <div className="lg:w-1/3 sm:w-1/2 p-4">
                         <div className="flex relative">
                             <img
                                 alt="gallery"
                                 className="absolute inset-0 w-full h-full object-center object-contain"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf7G071LleAI_huTMiS-oCZ25WGOrFCqOA-A&usqp=CAU"
+                                src="https://cdn.shopify.com/s/files/1/0498/0159/2998/products/Alienware_Area_51m_in_Lunar_Light_with_Cyberpunk_v1_Left_Side_1200x1200.png?v=1615758941"
                             />
                             <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                                     Notebooks
                                 </h2>
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                    Dell Alienware x5000
+                                    Dell Alienware Area 51M
                                 </h1>
                                 <p className="leading-relaxed">
                                     El COLOSO de las notebooks gamer! Lorem
@@ -43,7 +43,7 @@ const Home = () => {
                             <img
                                 alt="gallery"
                                 className="absolute inset-0 w-full h-full object-center object-contain"
-                                src="https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/intro__ewz1ro7xs14y_large.jpg"
+                                src="https://static.techspot.com/images/products/2019/laptops/org/2019-08-12-product.png"
                             />
                             <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">

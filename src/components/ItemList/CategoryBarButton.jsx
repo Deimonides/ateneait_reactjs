@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CategoryBarButton = ({categId, categNombre}) => {
     return (
-        <button className="mx-2 my-1 bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-gradient-to-r from-blue-300 to-blue-400 hover:text-black hover:font-semibold ">
+        <button className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base mt-4 md:mt-0 text-lg font-bold mb-2">
             <Link to={`/catalogo/${categId}`}>{categNombre}</Link>
         </button>
     )

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { useContext } from "react";
 
 export default function ItemCount({ stock, addToCart }) {
     const [count, setCount] = useState(1);
-    
+
     function sumarItem() {
         if (count < stock) {
             setCount(count + 1);
@@ -14,8 +15,8 @@ export default function ItemCount({ stock, addToCart }) {
             setCount(count - 1);
         }
     }
- 
-    return ( 
+
+    return (
         <>
             <div className="justify-items-end">
                 <h4 className="inline-flex mt-5 mr-2">Cantidad:</h4>
@@ -23,28 +24,30 @@ export default function ItemCount({ stock, addToCart }) {
                     <button
                         onClick={restarItem}
                         type="button"
-                        className="py-2 px-5 text-sm font-medium text-gray-900 bg-blue-100 rounded-l-full 
-                        hover:bg-blue-600 hover:text-white" >
+                        className="w-15 py-1 px-5 inline-flex items-center border-0 px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-l-full text-base mt-4 md:mt-0 text-lg font-bold"
+                    >
                         - 1
                     </button>
                     <label
                         type="label"
-                        className="py-2 px-5 w-12 mx-0.5 text-sm font-medium text-gray-900 bg-transparent" >
+                        className="py-1 px-5 w-12 mx-0.5 items-center text-sm font-medium text-gray-900 bg-transparent text-lg font-bold"
+                    >
                         {count}
                     </label>
                     <button
                         onClick={sumarItem}
                         type="button"
-                        className="py-2 px-5 text-sm font-medium text-gray-900 bg-blue-100 rounded-r-full 
-                        hover:bg-blue-600 hover:text-white" >
+                        className="w-15 py-1 px-5 inline-flex items-center border-0  px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-100 to-blue-300 hover:from-blue-800 hover:to-blue-400 hover:text-white rounded-r-full text-base mt-4 md:mt-0 text-lg font-bold"
+                    >
                         + 1
                     </button>
+                </div>
+                <div className="inline-flex rounded-md mx-4 mt-4 md:mx-1" role="group">
                     <button
+                        onClick={() => addToCart(count)}
                         type="button"
-                        className="py-2 px-4 ml-4 text-sm font-medium text-gray-900 bg-blue-300 rounded-full 
-                        hover:bg-blue-600 hover:text-white"
-                        /* onClick={ () => addToCart(count) } > */
-                        onClick={ () => addToCart(count) } >
+                        className="inline-flex items-center border-0  py-1 px-3 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold"
+                    >
                         Agregar al carrito
                     </button>
                 </div>

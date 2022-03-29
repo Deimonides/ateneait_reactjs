@@ -5,16 +5,10 @@ import { useContext } from "react";
 import CartContext from "../Context/CartContext";
 
 const Cart = () => {
-    const {
-        itemsInCart,
-        contarItems,
-        precioTotal,
-        vaciarCarrito,
-        eliminarItem,
-    } = useContext(CartContext);
+    const { itemsInCart,contarItems,precioTotal,vaciarCarrito } = useContext(CartContext);
 
     if (itemsInCart.length === 0) {
-        console.log("Carrito VACIO.");
+        /* console.log("Carrito VACIO."); */
         return (
             <div className="flex-auto justify-center mx-auto">
                 <h2 className="flex justify-center flex-auto mt-4 text-2xl">
@@ -23,7 +17,7 @@ const Cart = () => {
                 <img alt="dinero" src="dinero.png" className="mx-auto mt-10" />
                 <Link to="../catalogo/todo">
                     <div className="flex justify-center mt-10">
-                        <button className="flex justify-center text-white bg-sky-500 border-0 py-2 px-6 focus:outline-none hover:bg-sky-700 rounded-full text-lg">
+                        <button className="inline-flex items-center border-0 py-1 px-3 mx-1 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold ">
                             Ir al catálogo
                         </button>
                     </div>
@@ -31,15 +25,16 @@ const Cart = () => {
             </div>
         );
     } else {
-        console.log("Carrito con items.");
+        /* console.log("Carrito con items."); */
         return (
             <div>
-                {/* <h3>Detalle de los items</h3> */}
+                {/* Detalle de cada producto agregado */}
                 <div>
                     {itemsInCart.map((item) => {
                         return <CartItem key={item.id} item={item}></CartItem>;
                     })}
                 </div>
+
                 {/* Totalizados */}
                 <div className="flex flex-col flex-auto ">
                     <h3 className="flex justify-center text-blue-700 text-s font-medium">
@@ -53,18 +48,15 @@ const Cart = () => {
                 {/* Botones */}
                 <div className=" flex flex-wrap justify-center mt-6 mb-20">
                     <Link to="../pago">
-                        <button className="mr-4 mb-2 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-700 rounded-full   text-lg">
+                        <button className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
                             Pagar el carrito
                         </button>
                     </Link>
-                    <button
-                        className="mr-4 mb-2 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-700 rounded-full text-lg"
-                        onClick={vaciarCarrito}
-                    >
+                    <button onClick={vaciarCarrito} className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
                         Vaciar carrito
                     </button>
                     <Link to="../catalogo/todo">
-                        <button className="inline-flex text-white bg-sky-500 border-0 py-2 px-6 focus:outline-none hover:bg-sky-700 rounded-full text-lg">
+                        <button className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
                             Seguir comprando
                         </button>
                     </Link>
@@ -73,4 +65,5 @@ const Cart = () => {
         );
     }
 };
+
 export default Cart;

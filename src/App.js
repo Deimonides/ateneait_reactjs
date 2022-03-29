@@ -11,8 +11,8 @@ import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import Servicios from './components/Pages/Servicios';
 import Contacto from './components/Pages/Contacto';
 import Cart from './components/Cart/Cart';
-import PagoContainer from './components/Pago/PagoContainer';
-
+import Pago from './components/Pago/Pago';
+import Finalizado from './components/Pago/Finalizado';
 
 
 function App() {
@@ -29,7 +29,8 @@ function App() {
                         <Route path='servicios' element={<Servicios />}></Route>
                         <Route path='contacto' element={<Contacto />}></Route>
                         <Route path='carrito' element={<Cart />}></Route>
-                        <Route path='pago' element={<PagoContainer />}></Route>
+                        <Route path='pago' element={<Pago />}></Route>
+                        <Route path='finalizado' element={<Finalizado />}></Route>
                     </Routes>
                     <Footer anio='2022'></Footer>
                 </BrowserRouter>

@@ -6,14 +6,14 @@ import icon_carrito from '../../assets/icons/shopping-cart.png'
 
 
 function CartWidget() {
-    const { contarItems, precioTotal } = useContext(CartContext);
+    const { contarItems } = useContext(CartContext);
     
     
     
     return (
         <Link to='/carrito'>
-            <div className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gradient-to-r from-blue-300 to-blue-400 rounded-full text-base hover:text-white mt-4 md:mt-0">
-                <img src={icon_carrito} alt="Carrito" className="w-5 h-5 p-0.5 mr-2" />
+            <div className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base mt-4 md:mt-0 text-lg font-bold">
+                <img src={icon_carrito} alt="Carrito" className="w-5 h-5 p-0.5 mr-2 bg-white border-2 rounded-full border-white" />
             Mi Carrito
             {contarItems() > 0 && <small className="ml-1 w-5 h-5 px-1 pb-3 rounded-full bg-red-500 text-white text-justify font-bold">  {contarItems()} </small>}
             </div>

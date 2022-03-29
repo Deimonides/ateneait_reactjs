@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -16,22 +16,25 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
-
-export const db = getFirestore() 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore() 
+const productosColeccion = collection(db, "productos")
+const categoryColeccion = collection(db, "category")
+const comprasColeccion = collection(db, "compras")
 
 export const getProductos = async () => {
-    const querySnapshot = await getDocs(collection(db, "productos"))
+    const querySnapshot = await getDocs( productosColeccion )
     let dbProductos = []
     querySnapshot.forEach(element => {
         /* console.log("getProductos en fbC: ", element.data()); */
         dbProductos.push(element.data())
+        /* dbProductos.push({ id: element.id, ...element.data() }) // para incluir el ID de FS en el array local */
     });
     return dbProductos;
 }
 
 export const getCategorias = async () => {
-    const querySnapshot = await getDocs(collection(db, "category"))
+    const querySnapshot = await getDocs( categoryColeccion )
     let dbCategorias = []
     querySnapshot.forEach(element => {
         /* console.log("getCategorias en fbC: ", element.id, element.data()); */
@@ -40,5 +43,10 @@ export const getCategorias = async () => {
     return dbCategorias;
 }
 
+export const grabarCompra = async (array) => {
+    const respuesta = await addDoc(comprasColeccion, array)
+    return respuesta
+    
+}
 
 /* export const getFireStore = () => { return app } */

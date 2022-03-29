@@ -7,8 +7,6 @@ import ItemCount from "./ItemCount";
 const ItemDetail = ({ item }) => {
     /* console.log(item); */
     const { addItem , contarItems } = useContext(CartContext);
-    
-    
 
     const [isInCart, setIsInCart] = useState(false);
 
@@ -17,8 +15,9 @@ const ItemDetail = ({ item }) => {
         setIsInCart(true)
         contarItems()
     }
- 
+  
     /* console.log(isInCart); */
+    /* console.log(item.price); */
 
     return (
         <>
@@ -28,8 +27,7 @@ const ItemDetail = ({ item }) => {
                         <img
                             alt={item.id}
                             className="lg:w-1/2  h-64 object-center object-contain rounded"
-                            src={item.image}
-                        />
+                            src={item.image} />
                         <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                             <h2 className="text-sm title-font text-gray-500 tracking-widest">
                                 {item.type}
@@ -49,18 +47,15 @@ const ItemDetail = ({ item }) => {
                                     Stock disponible: {item.stock}
                                 </p>
                             </div>
-
                             
                             {isInCart 
                             ?   <Link to='../carrito'>
-                                    <button type="button" className="py-2 px-4 ml-4 mt-4 ml-60 w-40 text-sm font-medium text-gray-900 bg-green-300 rounded-full hover:bg-green-600 hover:text-white">
+                                    {/* <button type="button" className="py-2 px-4 mt-4 ml-60 w-40 text-sm font-medium text-gray-900 bg-green-300 rounded-full hover:bg-green-600 hover:text-white"> */}
+                                    <button type="button" className="border-0 py-1 px-3 mx-5 mt-4 ml-60 w-40 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold">
                                     Ir al carrito
                                     </button>     
                                 </Link>
-                            :   <ItemCount
-                                    addToCart={addToCart}
-                                    stock={item.stock}
-                                />
+                            :   <ItemCount addToCart={addToCart} stock={item.stock} />
                             }
                         </div>
                     </div>
