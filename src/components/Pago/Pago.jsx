@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import CartContext from "../Context/CartContext";
 import { grabarCompra } from "../firebase/firebaseClient";
@@ -16,14 +16,14 @@ const Pago = () => {
                 price: element.price,
                 quantity: element.itemCant
             }
-        })
+        });
         const compra = {
             cliente: [datosCliente],
             productos: [...productosCompra],
             total: precioTotal()
-        }
+        };
         /* console.log(compra); */
-        grabarCompra(compra).then
+        grabarCompra(compra);
         console.log("Compra realizada!");
         vaciarCarrito();
 
