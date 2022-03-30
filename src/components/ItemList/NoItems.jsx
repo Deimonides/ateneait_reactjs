@@ -24,7 +24,7 @@ const NoItems = () => {
                                 Disculpas! No disponemos de stock en este                                momento.
                             </p>
                             <Link to="/catalogo/todo">
-                                <button className="inline-flex items-center border-0 py-1 px-3 mx-1 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold ">
+                                <button className="inline-flex items-center border-0 py-1 px-3 mx-1 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold ">
                                     Volver al catálogo
                                 </button>
                             </Link>

@@ -24,7 +24,7 @@ export default function ItemCount({ stock, addToCart }) {
                     <button
                         onClick={restarItem}
                         type="button"
-                        className="w-15 py-1 px-5 inline-flex items-center border-0 px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-l-full text-base mt-4 md:mt-0 text-lg font-bold"
+                        className="w-15 py-1 px-5 inline-flex items-center border-0 px-3 mx-1 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-l-full text-base mt-4 md:mt-0 text-lg font-bold"
                     >
                         - 1
                     </button>
@@ -37,7 +37,7 @@ export default function ItemCount({ stock, addToCart }) {
                     <button
                         onClick={sumarItem}
                         type="button"
-                        className="w-15 py-1 px-5 inline-flex items-center border-0  px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-100 to-blue-300 hover:from-blue-800 hover:to-blue-400 hover:text-white rounded-r-full text-base mt-4 md:mt-0 text-lg font-bold"
+                        className="w-15 py-1 px-5 inline-flex items-center border-0  px-3 mx-1 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-r-full text-base mt-4 md:mt-0 text-lg font-bold"
                     >
                         + 1
                     </button>
@@ -46,7 +46,7 @@ export default function ItemCount({ stock, addToCart }) {
                     <button
                         onClick={() => addToCart(count)}
                         type="button"
-                        className="inline-flex items-center border-0  py-1 px-3 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold"
+                        className="inline-flex items-center border-0  py-1 px-3 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold"
                     >
                         Agregar al carrito
                     </button>

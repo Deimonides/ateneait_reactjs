@@ -1,42 +1,49 @@
+import { getProductos } from "../firebase/firebaseClient";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import JsonProductos from "../../assets/productos.json";
 import ItemList from "./ItemList.jsx";
 import NoItems from "./NoItems";
+import LoadingScreen from "./LoadingScreen";
 
 function ItemListContainer() {
     const [productos, setProductos] = useState([]);
+    const [consultado, setConsultado] = useState(false);
+
     const { categoryID } = useParams();
 
     useEffect(() => {
-        getItems(categoryID);
+        setConsultado(false);
+        getProductos().then((prods) => {
+            /* console.log("getProductos en ILC2: ", prods); */
+            
+            if (categoryID === "todo") {
+                /* console.log('categoryID True', categoryID); */
+                // Mapear todo => Mostrar todos los productos
+                setProductos(prods);
+                setConsultado(true);
+            } else {
+                /* console.log('categoryID False', categoryID); */
+                const arrayCateg = prods.filter((item) => {
+                    return item.category.toLowerCase() === categoryID; // Filtrar los productos que coincidan con la categoria
+                });
+                console.log( '@ItemListContainer@ arrayCateg', arrayCateg );
+                setConsultado(true);
+                setProductos(arrayCateg);
+            }
+        });
+        /* getCategorias().then( categs => {
+            console.log("getProductos en ILC2: ", categs);
+        }) */
     }, [categoryID]);
-
-    const getItems = (categoryID) => {
-        const getItemsPromise = new Promise((resolve, reject) => {
-            /* setTimeout(() => { */
-                if (categoryID === "todo") {
-                    resolve(JsonProductos); // Mapear todo =>Mostrar todos los productos
-                } else {
-                    const arrayCateg = JsonProductos.filter((item) => {
-                        return item.category.toLowerCase() == categoryID; // Filtrar los productos que coincidan con la categoria
-                    });
-                    resolve(arrayCateg);
-                    console.log("@ItemListContainer@ arrayCateg", arrayCateg);
-                }
-            /* }, 2000); */ // Desafío entregable: solicita delay de 2000 (2 segundos), simulando retardo de red.
-        });
-
-        getItemsPromise.then((datos) => {
-            setProductos(datos);
-        });
-    };
 
     return (
         <div>
             { productos.length > 0 
-                ? ( <ItemList propsILC={productos}></ItemList> )// La categoria SI tiene productos
-                : ( <NoItems />) // La categoria NO tiene productos
+                ? <ItemList propsILC={productos}></ItemList> // Se consultó la base && la categoria SI tiene productos
+                : [ consultado
+                    ?<NoItems /> // Se consultó la base && la categoria NO tiene productos
+                    :<LoadingScreen /> // NO se consultó la base (se está consultando)
+                ]
             }
         </div>
     );

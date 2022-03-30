@@ -11,13 +11,13 @@ const Cart = () => {
         /* console.log("Carrito VACIO."); */
         return (
             <div className="flex-auto justify-center mx-auto">
-                <h2 className="flex justify-center flex-auto mt-4 text-2xl">
+                <h2 className="flex justify-center flex-auto mt-4 text-2xl font-bold text-gray-600">
                     No hay productos en su carrito, pero...
                 </h2>
                 <img alt="dinero" src="dinero.png" className="mx-auto mt-10" />
                 <Link to="../catalogo/todo">
                     <div className="flex justify-center mt-10">
-                        <button className="inline-flex items-center border-0 py-1 px-3 mx-1 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold ">
+                        <button className="inline-flex items-center border-0 py-1 px-3 mx-1 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold ">
                             Ir al catálogo
                         </button>
                     </div>
@@ -48,15 +48,15 @@ const Cart = () => {
                 {/* Botones */}
                 <div className=" flex flex-wrap justify-center mt-6 mb-20">
                     <Link to="../pago">
-                        <button className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
+                        <button className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
                             Pagar el carrito
                         </button>
                     </Link>
-                    <button onClick={vaciarCarrito} className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
+                    <button onClick={vaciarCarrito} className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
                         Vaciar carrito
                     </button>
                     <Link to="../catalogo/todo">
-                        <button className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
+                        <button className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
                             Seguir comprando
                         </button>
                     </Link>

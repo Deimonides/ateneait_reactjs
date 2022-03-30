@@ -203,14 +203,14 @@ const Pago = () => {
                                     <Link to="../carrito">
                                         <button
                                             type="button"
-                                            className="py-1 px-6 rounded-full text-lg inline-flex items-center border-0  px-3 mt-10 bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold">
+                                            className="py-1 px-6 rounded-full text-lg inline-flex items-center border-0  px-3 mt-10 bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold">
                                             Volver
                                         </button>
                                     </Link>
                                     <Link to="../catalogo/todo">
                                         <button
                                             type="button"
-                                            className="py-1 px-6 rounded-full text-lg inline-flex items-center border-0  px-3 mt-10 bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold" >
+                                            className="py-1 px-6 rounded-full text-lg inline-flex items-center border-0  px-3 mt-10 bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold" >
                                             Seguir comprando
                                         </button>
                                     </Link>
@@ -219,7 +219,7 @@ const Pago = () => {
                                             <button
                                                 type="button"
                                                 value="Submit"
-                                                className="py-1 px-6 rounded-full text-lg inline-flex items-center border-0  px-3 mt-10 bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold"
+                                                className="py-1 px-6 rounded-full text-lg inline-flex items-center border-0  px-3 mt-10 bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold"
                                                 onClick={() => { armarCompra(cliente) }} >
                                                 Finalizar compra
                                             </button>

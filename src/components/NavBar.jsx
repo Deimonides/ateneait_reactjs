@@ -16,13 +16,13 @@ function NavBar() {
              
                 {/* /// Accesos \\\ */}
                 <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-lg font-bold justify-center">
-                    <Link to='/'             className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base mt-4 md:mt-0">Inicio</Link>
-                    <Link to='catalogo/todo' className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base mt-4 md:mt-0">Catalogo</Link>
-                    <Link to='contacto'      className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base mt-4 md:mt-0">Contacto</Link>
+                    <Link to='/'             className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base mt-4 md:mt-0">Inicio</Link>
+                    <Link to='catalogo/todo' className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base mt-4 md:mt-0">Catalogo</Link>
+                    <Link to='contacto'      className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base mt-4 md:mt-0">Contacto</Link>
                 </div>
 
                 {/* /// Boton MI CUENTA \\\ */}
-                <button className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-lg font-bold text-base mt-4 md:mt-0">
+                <button className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-lg font-bold text-base mt-4 md:mt-0">
                     <img src={icon_cuenta} alt="Cuenta" className="w-5 h-5 p-0.5 mr-2 bg-white border-2 rounded-full border-white" />
                     Mi Cuenta
                 </button>

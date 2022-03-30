@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import Footer from'./components/Footer.jsx';
 
 import Home from './components/Pages/Home';
-import ItemListContainer from './components/ItemList/ItemListContainer2';
+import ItemListContainer from './components/ItemList/ItemListContainer';
 import { CartContextProvider } from './components/Context/CartContext';
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import Servicios from './components/Pages/Servicios';

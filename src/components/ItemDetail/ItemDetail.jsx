@@ -51,7 +51,7 @@ const ItemDetail = ({ item }) => {
                             {isInCart 
                             ?   <Link to='../carrito'>
                                     {/* <button type="button" className="py-2 px-4 mt-4 ml-60 w-40 text-sm font-medium text-gray-900 bg-green-300 rounded-full hover:bg-green-600 hover:text-white"> */}
-                                    <button type="button" className="border-0 py-1 px-3 mx-5 mt-4 ml-60 w-40 focus:outline-none bg-gradient-to-r from-blue-300 to-blue-100 hover:from-blue-400 hover:to-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold">
+                                    <button type="button" className="border-0 py-1 px-3 mx-5 mt-4 ml-60 w-40 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0  text-lg font-bold">
                                     Ir al carrito
                                     </button>     
                                 </Link>
