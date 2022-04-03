@@ -40,12 +40,12 @@ const BarraCategoria = () => {
             'name': "Teclados"
         }
     ] */
-
-    /* useEffect(() => { */
+    
+    useEffect(() => {
         getCategorias().then((categorias) => {
             setCategorias(categorias);
         });
-   /*  }, [categorias]); */
+    }, [categorias]);
 
     return (
         <div>

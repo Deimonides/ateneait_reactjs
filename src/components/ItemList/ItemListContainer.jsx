@@ -29,7 +29,7 @@ function ItemListContainer() {
                 setProductos(arrayCateg);
             }
         });
-    }, []);
+    }, [categoryID]);
 
     return (
         <div>
