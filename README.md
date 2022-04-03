@@ -21,4 +21,4 @@ a medida se van desarrollando en el curso semana a semana.
 
 - React version 17.0.2
 - Tailwind CSS version 3.0.22
-- 
+- Firebase (Firestore) version 9.6.8
