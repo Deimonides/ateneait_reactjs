@@ -8,7 +8,6 @@ const Cart = () => {
     const { itemsInCart,contarItems,precioTotal,vaciarCarrito } = useContext(CartContext);
 
     if (itemsInCart.length === 0) {
-        /* console.log("Carrito VACIO."); */
         return (
             <div className="flex-auto justify-center mx-auto">
                 <h2 className="flex justify-center flex-auto mt-4 text-2xl font-bold text-gray-600">
@@ -25,7 +24,6 @@ const Cart = () => {
             </div>
         );
     } else {
-        /* console.log("Carrito con items."); */
         return (
             <div>
                 {/* Detalle de cada producto agregado */}
@@ -48,8 +46,8 @@ const Cart = () => {
                 {/* Botones */}
                 <div className=" flex flex-wrap justify-center mt-6 mb-20">
                     <Link to="../pago">
-                        <button className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">
-                            Pagar el carrito
+                        <button className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold animate-bounce">
+                            Ir a pagar
                         </button>
                     </Link>
                     <button onClick={vaciarCarrito} className="inline-flex items-center border-0 py-1 px-3 mx-5 mt-10 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-base md:mt-0 text-lg font-bold">

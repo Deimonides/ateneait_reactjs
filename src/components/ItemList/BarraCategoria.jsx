@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { getCategorias } from "../firebase/firebaseClient";
-import CategoryBarButton from "./CategoryBarButton";
+import BtnBarraCategoria from "./BtnBarraCategoria";
 
-const CategoryBar = () => {
+const BarraCategoria = () => {
     const [categorias, setCategorias] = useState([]);
 
     /* const categorias = [
@@ -41,11 +41,11 @@ const CategoryBar = () => {
         }
     ] */
 
-    useEffect(() => {
+    /* useEffect(() => { */
         getCategorias().then((categorias) => {
             setCategorias(categorias);
         });
-    }, []);
+   /*  }, [categorias]); */
 
     return (
         <div>
@@ -54,11 +54,11 @@ const CategoryBar = () => {
                     <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                         {categorias.map((categ) => {
                             return (
-                                <CategoryBarButton
+                                <BtnBarraCategoria
                                     key={categ.id}
                                     categId={categ.id}
                                     categNombre={categ.name}
-                                ></CategoryBarButton>
+                                ></BtnBarraCategoria>
                             );
                         })}
                     </nav>
@@ -68,4 +68,4 @@ const CategoryBar = () => {
     );
 };
 
-export default CategoryBar;
+export default BarraCategoria;

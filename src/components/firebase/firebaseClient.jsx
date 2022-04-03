@@ -46,7 +46,4 @@ export const getCategorias = async () => {
 export const grabarCompra = async (array) => {
     const respuesta = await addDoc(comprasColeccion, array)
     return respuesta
-    
 }
-
-/* export const getFireStore = () => { return app } */

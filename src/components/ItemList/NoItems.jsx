@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CategoryBar from "./CategoryBar";
+import BarraCategoria from "./BarraCategoria";
 
 const NoItems = () => {
     return (
         <>
-            <CategoryBar />
+            <BarraCategoria />
             <section className="flex text-gray-600 body-font justify-center">
                 <div className="px-auto py-24 mx-auto">
                     <div className="flex   -mb-10 text-center">

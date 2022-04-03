@@ -4,7 +4,6 @@ const CartContext = createContext();
 
 export function CartContextProvider({ children }) {
     const [itemsInCart, setItemsInCart] = useState([]);
-    /* const [totales, setTotales] = useState(0); */   
 
     function addItem(item, itemCant) {
         let buscarItem = itemsInCart.find(elemento => (elemento.id === item.id) ) // buscar el item si está en el carrito
@@ -36,7 +35,6 @@ export function CartContextProvider({ children }) {
             
     function eliminarItem(id) {
         setItemsInCart(itemsInCart.filter( elemento => elemento.id !== id ) )
-        
     }
     
     function vaciarCarrito() {

@@ -4,7 +4,11 @@ import CartWidget from './Cart/CartWidget'
 import { Link } from 'react-router-dom'
 
 function NavBar() {
-
+    
+    function miUsuario() {
+        return alert("Ya estás logueado en el sitio!")
+    }
+    
     return (
         <header className="text-gray-600 body-font w-full sticky top-0 bg-gradient-to-r from-blue-200 to-blue-100 flex-nowrap z-50">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -22,9 +26,9 @@ function NavBar() {
                 </div>
 
                 {/* /// Boton MI CUENTA \\\ */}
-                <button className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-lg font-bold text-base mt-4 md:mt-0">
+                <button onClick={miUsuario} className="inline-flex items-center border-0 py-1 px-3 mx-1 focus:outline-none bg-blue-300 hover:bg-blue-800 hover:text-white rounded-full text-lg font-bold text-base mt-4 md:mt-0">
                     <img src={icon_cuenta} alt="Cuenta" className="w-5 h-5 p-0.5 mr-2 bg-white border-2 rounded-full border-white" />
-                    Mi Cuenta
+                    Cuenta
                 </button>
                 
                 {/* /// Boton MI CARRITO \\\ */}

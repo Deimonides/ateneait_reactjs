@@ -17,7 +17,8 @@ El proyecto tiene como meta demostrar los conociemientos obtenidos en clase,
 implementando las herramientas del framework React JS, en una web tipo eCommerce,
 a medida se van desarrollando en el curso semana a semana.
 
-**Negrita**
-_Cursiva_
-Texto ~Subindice~
-Texto 
+### Características
+
+- React version 17.0.2
+- Tailwind CSS version 3.0.22
+- 

@@ -9,8 +9,7 @@ const Home = () => {
                         ¡Próximos ingresos!
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        No te pierdas estas novedades, que estarán llegando en
-                        pocas semanas.
+                        No te pierdas estas novedades, que estarán llegando en pocas semanas.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4">
@@ -30,9 +29,7 @@ const Home = () => {
                                     Dell Alienware Area 51M
                                 </h1>
                                 <p className="leading-relaxed">
-                                    El COLOSO de las notebooks gamer! Lorem
-                                    ipsum dolor sit amet consectetur adipisicing
-                                    elit. Quas, a!
+                                    Intel Core i9-9900K, RAM de 64 GB, y gráfica Nvidia GeForce RTX 2080 de 8 GB.
                                 </p>
                             </div>
                         </div>
@@ -50,7 +47,7 @@ const Home = () => {
                                     Macbooks
                                 </h2>
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                                    MacBook Pro 16" M1 Pro 1 TB - Silver
+                                    MacBook Pro 16" M1 Pro
                                 </h1>
                                 <p className="leading-relaxed">
                                     La potencia del ultrarrápido chip M1 Pro te
@@ -76,8 +73,7 @@ const Home = () => {
                                     AMD Threadripper 3990X
                                 </h1>
                                 <p className="leading-relaxed">
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Temporibus, eius!
+                                Los 64 núcleos proporcionan 128 subprocesos de potencia de procesamiento.
                                 </p>
                             </div>
                         </div>
@@ -98,9 +94,7 @@ const Home = () => {
                                     Logitech G29
                                 </h1>
                                 <p className="leading-relaxed">
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Fuga reiciendis illum eum
-                                    delectus eius tenetur?
+                                    Driving Force es el volante de simulación de carreras definitivo para los juegos de carreras.
                                 </p>
                             </div>
                         </div>
@@ -121,9 +115,7 @@ const Home = () => {
                                     Xiaomi Redmi 11 Pro
                                 </h1>
                                 <p className="leading-relaxed">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Aperiam quis unde officiis
-                                    alias recusandae ullam?
+                                    Pantalla AMOLED FHD+ de 6.67 a 120Hz, CPU MediaTek Helio G96, y 8GB de RAM.
                                 </p>
                             </div>
                         </div>
@@ -144,9 +136,7 @@ const Home = () => {
                                     Xiaomi Pad 5
                                 </h1>
                                 <p className="leading-relaxed">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Aliquam eius magnam
-                                    voluptate assumenda a, tempora qui!
+                                    Lanzada en agosto 2021, cuenta con pantalla de 11", CPU Adreno 650, y 8 GB de RAM.
                                 </p>
                             </div>
                         </div>
