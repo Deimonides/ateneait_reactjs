@@ -45,7 +45,7 @@ const BarraCategoria = () => {
         getCategorias().then((categorias) => {
             setCategorias(categorias);
         });
-    }, [categorias]);
+    }, []);
 
     return (
         <div>

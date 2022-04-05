@@ -29,6 +29,7 @@ function ItemListContainer() {
                 setProductos(arrayCateg);
             }
         });
+        /* console.log("Render categoryID: ", categoryID); */
     }, [categoryID]);
 
     return (

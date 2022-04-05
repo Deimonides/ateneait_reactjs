@@ -30,6 +30,7 @@ export const getProductos = async () => {
         dbProductos.push(element.data())
         /* dbProductos.push({ id: element.id, ...element.data() }) // para incluir el ID de FS en el array local */
     });
+    /* console.log("getProductos"); */
     return dbProductos;
 }
 
@@ -40,10 +41,12 @@ export const getCategorias = async () => {
         /* console.log("getCategorias en fbC: ", element.id, element.data()); */
         dbCategorias.push({id: element.id, ...element.data()})
     });
+    /* console.log("getCategorias"); */
     return dbCategorias;
 }
 
 export const grabarCompra = async (array) => {
     const respuesta = await addDoc(comprasColeccion, array)
+    /* console.log("grabarCompra"); */
     return respuesta
 }

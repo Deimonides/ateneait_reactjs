@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail.jsx';
 import { getProductos } from "../firebase/firebaseClient";
@@ -7,15 +7,13 @@ import { getProductos } from "../firebase/firebaseClient";
 function ItemDetailContainer(  ) {
     const { id } = useParams();
     const [producto, setProducto] = useState([])
-
   
-
-    getProductos().then((prods) => { 
-        const itemSeleccionado = prods.find( item => {
-            return item.id === id
+    useEffect(() => {
+        getProductos().then((prods) => { 
+            const itemSeleccionado = prods.find( item => { return item.id === id })
+            setProducto(itemSeleccionado); 
         })
-        setProducto(itemSeleccionado); 
-    })
+    }, []);
     
     return (
         <div>            
