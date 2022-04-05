@@ -13,18 +13,18 @@ function ItemListContainer() {
     useEffect(() => {
         setConsultado(false);
         getProductos().then((prods) => {
-            /* console.log("getProductos en ILC2: ", prods); */
+            console.log("getProductos en ILC2: ", prods);
             if (categoryID === "todo") {
-                /* console.log('categoryID True', categoryID); */
+                console.log('categoryID True', categoryID);
                 // Mapear todo => Mostrar todos los productos
                 setProductos(prods);
                 setConsultado(true);
             } else {
-                /* console.log('categoryID False', categoryID); */
+                console.log('categoryID False', categoryID);
                 const arrayCateg = prods.filter((item) => {
-                    return item.category.toLowerCase() === categoryID; // Filtrar los productos que coincidan con la categoria
+                    return item.category === categoryID; // Filtrar los productos que coincidan con la categoria
                 });
-                /* console.log( '@ItemListContainer@ arrayCateg', arrayCateg ); */
+                console.log( '@ItemListContainer@ arrayCateg', arrayCateg );
                 setConsultado(true);
                 setProductos(arrayCateg);
             }

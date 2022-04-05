@@ -6,41 +6,6 @@ import BtnBarraCategoria from "./BtnBarraCategoria";
 const BarraCategoria = () => {
     const [categorias, setCategorias] = useState([]);
 
-    /* const categorias = [
-        {
-            'id': "todo",
-            'name': "Todo"
-        },
-        {
-            'id': "cpu",
-            'name': "Microprocesadores"
-        },
-        {
-            'id': "mother",
-            'name': "Placas Madre"
-        },
-        {
-            'id': "pvideo",
-            'name': "Placas de video"
-        },
-        {
-            'id': "ram",
-            'name': "Memorias RAM"
-        },
-        {
-            'id': "fuentes",
-            'name': "Fuentes"
-        },
-        {
-            'id': "monitores",
-            'name': "Monitores"
-        },
-        {
-            'id': "teclados",
-            'name': "Teclados"
-        }
-    ] */
-    
     useEffect(() => {
         getCategorias().then((categorias) => {
             setCategorias(categorias);
