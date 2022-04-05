@@ -14,7 +14,7 @@ const CartItem = ({item}) => {
                 <div className="flex items-center lg:w-3/5 mx-auto border-b border-r pb-4 mb-1 border-gray-200 lg:flex-row md:flex-row sm:flex-row justify-between">
                     <Link to={`/producto/${item.id}`}>
                         <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-blue-50 flex-shrink-0">
-                            <img src={item.image} className="sm:w-16 sm:h-16 mw-10 mh-10 hover:scale-125 ease-in duration-300"></img>
+                            <img src={item.image} alt={item.name} className="sm:w-16 sm:h-16 mw-10 mh-10 hover:scale-125 ease-in duration-300"></img>
                         </div>
                     </Link>
                     <div className="container flex-col sm:text-left  mt-6 sm:mt-0" >
